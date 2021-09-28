@@ -2,7 +2,7 @@ import Head from "next/Head";
 import { SubscribeButton } from "../SubscribeButton";
 import styles from "./home.module.scss";
 import { GetStaticProps } from "next";
-import { stripe } from "../services/services/stripe";
+import { stripe } from "../services/stripe";
 
 interface HomeProps {
   product: {
@@ -12,7 +12,7 @@ interface HomeProps {
 }
 
 export default function Home({ product }: HomeProps) {
-  console.log("props", product);
+
   return (
     <>
       <Head>
